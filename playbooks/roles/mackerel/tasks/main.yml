@@ -2,15 +2,16 @@
 # brew
 
 - name: Install/Upgrade Homebrew packages
-  homebrew: >
-    name={{ item.name }}
-    state={{ item.state | default('latest') }}
-    install_options={{
-      item.install_options | default() | join(',')
-      if item.install_options is not string
-      else item.install_options
-    }}
-  with_items: "{{ homebrew_packages }}"
+  community.general.homebrew:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('latest') }}"
+    install_options: >-
+      {{
+        (item.install_options | join(','))
+        if (item.install_options is defined and item.install_options is not string)
+        else (item.install_options if item.install_options is defined else omit)
+      }}
+  loop: "{{ homebrew_packages }}"
   register: brew_result
 
 - name: Make directory for Brew Info
@@ -47,4 +48,3 @@
 #    - "{{ metrics_battery_remain }}"
 #  changed_when: true
 #  notify: "Restart mackerel-agent (Darwin)"
-
