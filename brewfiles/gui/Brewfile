@@ -27,12 +27,12 @@ cask "visual-studio-code"
 cask "slack"
 cask "discord"
 cask "zoom"
-cask "chatwork"
 cask "telegram"
+#cask "chatwork"
 
 ## Other
 ###################
-cask "obsidian"
+#cask "obsidian"
 #cask "gimp"  # 遅すぎて我慢ならないので自動更新をやめる 2026.2.7
 #cask "bitwarden" # Safari拡張機能を入れるためにAppStoreからのインストールにした
 #cask "adobe-acrobat-reader"     # Needs Rosseta2
