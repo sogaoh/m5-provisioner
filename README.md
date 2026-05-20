@@ -1,18 +1,17 @@
-# m2-provisioner
-My PC (M2 Mac) provisioner
+# m5-provisioner
+My PC (M5 Mac) provisioner
 
 since 
-- [my previous "mba-provisioner"](https://github.com/sogaoh/mba-provisioner)
+- [my current "m2-provisioner"](https://github.com/sogaoh/m2-provisioner)
 - [my previous "mba-provisioner2"](https://github.com/sogaoh/mba-provisioner2)
+- [my previous "mba-provisioner"](https://github.com/sogaoh/mba-provisioner)
 
 
 ## Prerequisite
 
 ### OS
-- macOS Sonoma ~  (zsh)
-  - Mac mini (M2)
-- macOS Sequoia ~  (zsh)
-  - MacBook Air (M3)
+- macOS Tahoe ~  (zsh)
+  - MacBook Air (M5)
 
 ### Security
 - **Allow full access to terminal.app**
@@ -49,7 +48,7 @@ since
 ### Prepare
 - Clone this repository
   ```zsh
-  git clone https://github.com/sogaoh/m2-provisioner.git
+  git clone https://github.com/sogaoh/m5-provisioner.git
   ```
 
 - Set `variables.yaml` (If run `make ma`)
@@ -71,7 +70,7 @@ since
 ### Run Setup
 
 ```bash
-cd /path/to/m2-provisioner
+cd /path/to/m5-provisioner
 ```
 
 ```bash
