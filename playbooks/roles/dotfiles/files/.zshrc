@@ -17,8 +17,8 @@ export CLICOLOR=1
 # zsh-completion 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-  autoload -Uz compinit
-  compinit
+  #autoload -Uz compinit
+  #compinit
 fi
 
 # history
@@ -91,12 +91,12 @@ export PATH="$(aqua root-dir)/bin:$PATH"
 
 # gcloud 
 ## refs https://zenn.dev/choimake/articles/1abc277f1bffac
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+#source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+#source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 
 # anyenv
-eval "$(anyenv init -)"
+#eval "$(anyenv init -)"
 
 
 # bun completions
@@ -107,7 +107,7 @@ eval "$(anyenv init -)"
 
 
 # zsh-abbr
-source "/opt/homebrew/share/zsh-abbr/zsh-abbr.zsh"
+#source "/opt/homebrew/share/zsh-abbr/zsh-abbr.zsh"
 
 
 # mysql-client,psql PATH
@@ -131,8 +131,8 @@ ZSHHOME="${HOME}/.zsh.d"
 if [ -d $ZSHHOME -a -r $ZSHHOME -a \
      -x $ZSHHOME ]; then
     for i in $ZSHHOME/*; do
-        [[ ${i##*/} = *.zsh ]] &&
-            [ \( -f $i -o -h $i \) -a -r $i ] && source $i
+    #    [[ ${i##*/} = *.zsh ]] &&
+    #        [ \( -f $i -o -h $i \) -a -r $i ] && source $i
     done
 fi
 
@@ -156,14 +156,14 @@ eval "$(saml2aws --completion-script-zsh)"
 
 
 # direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 
 # mise
-eval "$(mise activate zsh)"
+#eval "$(mise activate zsh)"
 
 # Terragrunt: use terraform instead of tofu
-export TG_TF_PATH=$(which terraform)
+#export TG_TF_PATH=$(which terraform)
 
 # brew の aqua を優先しないように
 #export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
