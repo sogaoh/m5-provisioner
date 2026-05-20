@@ -8,4 +8,4 @@ cargo_packages:
   - { name: htmlq } 
   #- { name: deno }
   - { name: mise } 
-  - { name: spl-token-cli, executable: spl-token }
+  #- { name: spl-token-cli, executable: spl-token }
