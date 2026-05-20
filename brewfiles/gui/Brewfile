@@ -1,0 +1,42 @@
+require './brewfiles/m1_utils.rb'
+
+cask_args appdir: "/Applications"
+
+## Basic
+###################
+cask "iterm2"
+cask "raycast"
+
+## Browser
+###################
+cask "google-chrome"
+cask "firefox"
+cask "microsoft-edge"
+cask "arc"
+
+## Development
+###################
+cask "visual-studio-code"
+#cask "intellij-idea"
+#cask "jetbrains-toolbox"
+#cask "docker"        # 'Docker Desktop for Mac with Apple silicon' from https://docs.docker.com/desktop/install/mac-install/
+#cask "orbstack"
+
+## Communication
+###################
+cask "slack"
+cask "discord"
+cask "zoom"
+cask "chatwork"
+cask "telegram"
+
+## Other
+###################
+cask "obsidian"
+#cask "gimp"  # 遅すぎて我慢ならないので自動更新をやめる 2026.2.7
+#cask "bitwarden" # Safari拡張機能を入れるためにAppStoreからのインストールにした
+#cask "adobe-acrobat-reader"     # Needs Rosseta2
+#cask "rambox"
+#cask "dbeaver-community"
+#cask "cyberduck"
+cask "devtoys"    # need to run `xattr -rc "/Applications/DevToys.app"`

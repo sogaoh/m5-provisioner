@@ -1,0 +1,15 @@
+---
+dotfiles_name:
+  - .zlogin
+  - .zlogout
+  - .zpreztorc
+  - .zprofile
+  - .zshenv
+  - .zshrc
+  - .vimrc
+  - .my.cnf
+  - .psqlrc
+  - .actrc
+  - .zsh.d/abbr.zsh
+  - .config/peco/config.json
+  - .config/bat/config

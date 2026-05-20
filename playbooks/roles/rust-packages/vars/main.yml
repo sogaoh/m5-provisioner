@@ -1,0 +1,11 @@
+cargo_packages:
+  - { name: bat }
+  - { name: ripgrep, executable: rg }
+  - { name: fd-find, executable: fd }
+  - { name: fselect }
+  - { name: procs } 
+  - { name: du-dust, executable: dust }
+  - { name: htmlq } 
+  #- { name: deno }
+  - { name: mise } 
+  - { name: spl-token-cli, executable: spl-token }

@@ -1,0 +1,53 @@
+require './brewfiles/m1_utils.rb'
+
+brew "zsh-completion"
+brew "zsh-syntax-highlighting"
+brew "tmux"
+brew "rsync"
+brew "git"
+brew "wget"
+brew "curl"
+brew "tree"
+brew "nkf"
+brew "jq"
+brew "pigz"
+brew "grep"
+brew "lnav"
+brew "diff-pdf"
+
+#brew "awscli"   # moved to aqua.yaml
+#brew "azure-cli"
+cask "gcloud-cli"
+
+#brew "saml2aws"   # moved to aqua.yaml
+
+brew "mysql-client@8.0"
+brew "postgresql@17"
+
+brew "anyenv"
+brew "n"
+brew "pipx"
+brew "pnpm"
+
+brew "ffmpeg"
+brew "pv"
+brew "mas"
+brew "mkcert"
+brew "nss" 
+
+tap "mackerelio/mackerel-agent"
+brew "mkr"                  # mackerelio/mackerel-agent/mkr
+tap "olets/tap"
+brew "zsh-abbr"             # olets/tap/zsh-abbr
+#tap "cloudflare/cloudflare"
+#cask "cloudflare/cloudflare/cf-terraforming"    # needs GRANT security & privacy
+
+brew "ynqa/tap/jnv"
+
+brew "deno"
+
+#cask "1password-cli"   # moved to aqua.yaml
+
+brew "gonzo"
+brew "pwgen"
+brew "ni"
