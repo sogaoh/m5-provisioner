@@ -7,4 +7,4 @@
   command: "cargo install {{ item.name }}"
   loop: "{{ cargo_packages }}"
   args:
-    creates: "{{ ansible_env.HOME }}/.cargo/bin/{{ item.executable | default(item.name) }}"
+    creates: "{{ ansible_facts.env.HOME }}/.cargo/bin/{{ item.executable | default(item.name) }}"
