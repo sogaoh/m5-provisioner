@@ -2,7 +2,7 @@
 # Executes commands at the start of an interactive session.
 #
 
-PROVISIONER_ROOT_DIR="$(pwd)"
+PROVISIONER_ROOT_DIR="/Users/sogaoh/temp/m5-provisioner"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
