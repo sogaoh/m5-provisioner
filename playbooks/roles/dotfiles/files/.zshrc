@@ -2,6 +2,8 @@
 # Executes commands at the start of an interactive session.
 #
 
+PROVISIONER_ROOT_DIR="$(pwd)"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -85,7 +87,7 @@ bindkey '^x^i' peco-docker-images
 
 
 # aqua
-export AQUA_GLOBAL_CONFIG=/Volumes/crucial-p5/m2-provisioner/aqua/aqua.yaml
+export AQUA_GLOBAL_CONFIG="$PROVISIONER_ROOT_DIR/aqua/aqua.yaml"
 export PATH="$(aqua root-dir)/bin:$PATH"
 
 
@@ -164,9 +166,6 @@ eval "$(mise activate zsh)"
 
 # Terragrunt: use terraform instead of tofu
 export TG_TF_PATH=$(which terraform)
-
-# brew の aqua を優先しないように
-#export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 
 
 # unalias:最後に
