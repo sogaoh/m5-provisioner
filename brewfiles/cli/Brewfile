@@ -54,3 +54,5 @@ brew "ni"
 
 brew "jc"     # move from aqua.yaml 
 brew "dasel"  # move from aqua.yaml 
+
+brew "webp"
