@@ -169,7 +169,7 @@ eval "$(direnv hook zsh)"
 eval "$(mise activate zsh)"
 
 # Terragrunt: use terraform instead of tofu
-export TG_TF_PATH=$(which terraform)
+#export TG_TF_PATH=$(which terraform)
 
 
 # unalias:最後に
