@@ -8,7 +8,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.552.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.554.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: x-motemen/ghq@v1.10.1
 - name: peco/peco@v0.6.0
@@ -19,9 +19,9 @@ packages:
 - name: direnv/direnv@v2.37.1
 #- name: kellyjonbrazil/jc@v1.25.6  # brew での install に移行
 - name: gohugoio/hugo@v0.165.0
-- name: mikefarah/yq@v4.53.3
+- name: mikefarah/yq@v4.53.6
 - name: google/jsonnet@v0.20.0
-- name: CircleCI-Public/circleci-cli@v1.0.48254
+- name: CircleCI-Public/circleci-cli@v1.0.48692
 - name: tfutils/tfenv@v3.2.2
 - name: terraform-linters/tflint@v0.64.0
 - name: aquasecurity/tfsec@v1.28.14
@@ -40,15 +40,15 @@ packages:
 - name: cli/cli@v2.97.0 # gh
 #- name: volta-cli/volta@v2.0.2
 - name: getsops/sops@v3.13.3
-- name: suzuki-shunsuke/tfcmt@v4.14.17
+- name: suzuki-shunsuke/tfcmt@v4.14.18
 - name: suzuki-shunsuke/ghalint@v1.5.6
 - name: suzuki-shunsuke/pinact@v4.1.1
 - name: suzuki-shunsuke/ghtkn@v0.4.0
-- name: oven-sh/bun@bun-v1.3.14
-- name: k1LoW/runn@v1.9.4
+- name: oven-sh/bun@bun-v1.4.0
+- name: k1LoW/runn@v1.9.5
 - name: stateful/runme@v3.17.4
 #- name: playwright-community/playwright-go@v0.5700.1
-- name: pulumi/pulumi@v3.257.0
+- name: pulumi/pulumi@v3.259.0
 - name: tofuutils/tenv@v4.15.1
 - name: sigstore/cosign@v3.1.3
 - name: terramate-io/terramate@v0.17.2
@@ -56,10 +56,10 @@ packages:
 - name: tgenv/tgenv@v1.3.0
 - name: stern/stern@v1.34.0
 - name: 1password/cli@v2.30.3
-- name: aws/aws-cli@2.36.24
+- name: aws/aws-cli@2.36.28
 - name: aws/session-manager-plugin@1.2.835.0
 - name: Versent/saml2aws@v2.36.19
-- name: go-task/task@v3.52.0
+- name: go-task/task@v3.53.1
 - name: duckdb/duckdb@v1.5.5
 #- name: aws/copilot-cli@v1.34.1   # もう使わないと思うのでコメントアウト
 - name: aws/aws-sam-cli@v1.165.0
